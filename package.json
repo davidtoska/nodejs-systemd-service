@@ -1,0 +1,14 @@
+{
+  "name": "hello_env",
+  "version": "1.0.0",
+  "description": "node server running as a service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "snap-node-start": "/snap/bin/node /home/david/js/systemd1/index.js",
+    "reload":"sudo systemctl daemon-reload",
+    "start-service": "sudo systemctl start hello_env"
+  },
+  "author": "david toska",
+  "license": "ISC"
+}
