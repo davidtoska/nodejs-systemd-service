@@ -1,7 +1,8 @@
 # Use systemd to run a node-application as a service
 
-File: /lib/systemd/system/hello_env.service
-```
+``` java
+##/lib/systemd/system/hello_env.service
+
 [Unit]
 Description=hello_env.js - making your environment variables rad
 Documentation=https://example.com
@@ -17,6 +18,8 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target
 ```
+
+## Commands
 
 - sudo systemctl daemon-reload
 - sudo systemctl start hello_env
